@@ -13,7 +13,7 @@ void ShowCubes(int number)
     Console.Write(number*number*number);
 }
     
-    int GetInput(string text)
+int GetInput(string text)
     {
         Console.Write(text);
         return Convert.ToInt32(Console.ReadLine());
