@@ -6,7 +6,7 @@
 void ShowDistance(int xa, int xb, int ya, int yb, int za, int zb)
 {
     double distance = Math.Sqrt(Math.Pow(xa-xb, 2) + Math.Pow(ya-yb, 2) + Math.Pow(za-zb, 2));
-    double correction = (Math.Round(distance, 2) - Math.Round(distance, 0,MidpointRounding.ToZero))*100;
+    double correction = (Math.Round(distance, 2) - Math.Round(distance, 0,MidpointRounding.ToZero))*100; //Просто решил точку сделать вместо запятой, как в ответе :)
     Console.WriteLine($"A ({xa},{ya},{za}); B ({xb},{yb},{zb}) -> {Math.Round(distance, 0,MidpointRounding.ToZero)}.{Math.Round(correction, 0,MidpointRounding.ToEven)}");
 }
 
