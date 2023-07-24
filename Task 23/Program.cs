@@ -8,16 +8,16 @@ void ShowCubes(int number)
     Console.Write($"{number} -> ");
     for (int i = 1; i < number; i++)
     {
-        Console.Write($"{i*i*i}, ");
+        Console.Write($"{i * i * i}, ");
     }
-    Console.Write(number*number*number);
+    Console.Write(number * number * number);
 }
-    
+
 int GetInput(string text)
-    {
-        Console.Write(text);
-        return Convert.ToInt32(Console.ReadLine());
-    }
+{
+    Console.Write(text);
+    return Convert.ToInt32(Console.ReadLine());
+}
 
 int number = GetInput("Введите число: ");
 ShowCubes(number);

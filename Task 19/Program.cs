@@ -6,8 +6,8 @@
 
 void CheckPalindrome(int number)
 {
-    if (number/10000==number%10 & number/1000%10==number%100/10)
-    Console.WriteLine($"{number} -> да");
+    if (number / 10000 == number % 10 & number / 1000 % 10 == number % 100 / 10)
+        Console.WriteLine($"{number} -> да");
     else Console.WriteLine($"{number} -> нет");
 }
 
